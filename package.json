@@ -6,8 +6,8 @@
   "author": "Andre Nanninga <ag.nanninga@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel --out-dir docs src/index.html",
-    "build": "parcel build --out-dir docs src/index.html"
+    "start": "parcel --out-dir docs index.html",
+    "build": "parcel build --out-dir docs index.html"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -17,6 +17,7 @@
     "prettier-eslint": "^8.8.2"
   },
   "dependencies": {
+    "matter-js": "^0.14.2",
     "orbit-controls-es6": "^2.0.0",
     "three": "^0.98.0"
   }
