@@ -8,7 +8,7 @@ export default class Ground extends THREE.Group {
 		this.name = 'Ground';
 
 		const plane = new THREE.Mesh(
-			new THREE.PlaneGeometry(50, 50, 10, 10),
+			new THREE.PlaneGeometry(500, 500, 1, 1),
 			new THREE.MeshNormalMaterial({ wireframe: true })
 		);
 

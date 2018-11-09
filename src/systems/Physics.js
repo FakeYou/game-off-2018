@@ -4,9 +4,7 @@ export default class Physics {
 	constructor(game) {
 		this.game = game;
 
-		this.world = new Planck.World({
-			gravity: new Planck.Vec2(0, 10)
-		});
+		this.world = new Planck.World();
 	}
 
 	createDynamicBody(shape, mass) {

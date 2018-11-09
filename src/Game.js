@@ -6,11 +6,15 @@ import Keyboard from './systems/Keyboard';
 import Mouse from './systems/Mouse';
 import Physics from './systems/Physics';
 
+import Level from './entities/Level';
 import Ground from './entities/Ground';
 import Cursor from './entities/Cursor';
 import Ball from './entities/Ball';
 import Arrow from './entities/Arrow';
 import Wall from './entities/Wall';
+import Sheep from './entities/Sheep';
+
+import playground from './assets/maps/playground';
 
 class Game {
 	constructor(domElement) {
@@ -47,11 +51,12 @@ class Game {
 	};
 
 	create = () => {
+		this.addEntity(new Level(this, playground));
+
 		this.addEntity(new Ground(this));
 		this.addEntity(new Cursor(this));
 		this.addEntity(new Ball(this));
 		this.addEntity(new Arrow(this));
-		this.addEntity(new Wall(this));
 	};
 
 	update = () => {

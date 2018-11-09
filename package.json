@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "keycode-js": "^1.0.3",
-    "matter-js": "^0.14.2",
-    "oimo": "^1.0.9",
     "orbit-controls-es6": "^2.0.0",
     "planck-js": "^0.2.7",
     "three": "^0.98.0"
